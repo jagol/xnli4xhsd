@@ -1,0 +1,21 @@
+{
+    "path_out": "X_KEN/SAN20_IT/examples_20/RUN2/baseline/MHC_IT_eval.json",
+    "dataset": {
+        "name": "MHC_IT",
+        "path": "processed/MHC/MHC_IT_test_3690.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X_KEN/SAN20_IT/examples_20/RUN2"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "path_out": "X_NLI/BAS19_ES/examples_2000/RUN9/baseline/MHC_ES_eval.json",
+    "path_hypotheses": "hypotheses/en.json",
+    "dataset": {
+        "name": "MHC_ES",
+        "path": "processed/MHC/MHC_ES_test_3745.jsonl"
+    },
+    "predictor": {
+        "model": "morit/XLM-T-full-xnli",
+        "checkpoint": "X_NLI/BAS19_ES/examples_2000/RUN9",
+        "label_mapping": {
+            "entailment": 0,
+            "contradiction": 2
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "this-text-is-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

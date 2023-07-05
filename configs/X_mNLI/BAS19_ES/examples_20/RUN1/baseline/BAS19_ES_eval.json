@@ -1,0 +1,29 @@
+{
+    "path_out": "X_mNLI/BAS19_ES/examples_20/RUN1/baseline/BAS19_ES_eval.json",
+    "path_hypotheses": "hypotheses/translations/es.json",
+    "dataset": {
+        "name": "BAS19_ES",
+        "path": "processed/BAS19_ES/BAS19_ES_test_2000.jsonl"
+    },
+    "predictor": {
+        "model": "morit/spanish_xlm_xnli",
+        "checkpoint": "X_mNLI/BAS19_ES/examples_20/RUN1",
+        "label_mapping": {
+            "entailment": 0,
+            "contradiction": 2
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "this-text-is-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

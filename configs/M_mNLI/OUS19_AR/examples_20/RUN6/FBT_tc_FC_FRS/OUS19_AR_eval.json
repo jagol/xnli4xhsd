@@ -1,0 +1,63 @@
+{
+    "path_out": "M_mNLI/OUS19_AR/examples_20/RUN6/FBT_tc_FC_FRS/OUS19_AR_eval.json",
+    "path_hypotheses": "hypotheses/translations/ar.json",
+    "dataset": {
+        "name": "OUS19_AR",
+        "path": "processed/OUS19_AR/OUS19_AR_test_1000.jsonl"
+    },
+    "predictors": {
+        "main": {
+            "model": "aubmindlab/bert-base-arabertv02",
+            "checkpoint": "M_mNLI/OUS19_AR/examples_20/RUN6",
+            "label_mapping": {
+                "entailment": 0,
+                "contradiction": 2
+            }
+        },
+        "aux": {
+            "model": "aubmindlab/bert-base-arabertv02",
+            "checkpoint": "M_mNLI/arabic_bert_xnli",
+            "label_mapping": {
+                "entailment": 0,
+                "contradiction": 2
+            }
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "that-contains-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "filters": {
+            "TargetFilter": {
+                "hypotheses_keys": [
+                    "target_characteristics"
+                ],
+                "threshold": 0.1
+            },
+            "RecSlurFilter": {
+                "hypotheses_keys": [
+                    "rec_slur"
+                ],
+                "thresholds": {
+                    "about_others": 0.5,
+                    "neg_senti": 0.5
+                }
+            },
+            "CSFilter": {
+                "hypotheses_keys": [
+                    "stance",
+                    "this-text-supports-[X]"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "max_catch_min_filter"
+    }
+}

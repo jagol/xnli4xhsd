@@ -1,0 +1,21 @@
+{
+    "path_out": "X_KEN/HAS21_HI/examples_20/RUN9/baseline/HAS21_HI_eval.json",
+    "dataset": {
+        "name": "HAS21_HI",
+        "path": "processed/HAS21_HI/HAS21_HI_test_500.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X_KEN/HAS21_HI/examples_20/RUN9"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

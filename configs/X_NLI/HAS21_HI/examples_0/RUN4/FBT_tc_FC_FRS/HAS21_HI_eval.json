@@ -1,0 +1,63 @@
+{
+    "path_out": "X_NLI/HAS21_HI/examples_0/RUN4/FBT_tc_FC_FRS/HAS21_HI_eval.json",
+    "path_hypotheses": "hypotheses/en.json",
+    "dataset": {
+        "name": "HAS21_HI",
+        "path": "processed/HAS21_HI/HAS21_HI_test_500.jsonl"
+    },
+    "predictors": {
+        "main": {
+            "model": "morit/XLM-T-full-xnli",
+            "checkpoint": null,
+            "label_mapping": {
+                "entailment": 0,
+                "contradiction": 2
+            }
+        },
+        "aux": {
+            "model": "morit/XLM-T-full-xnli",
+            "checkpoint": null,
+            "label_mapping": {
+                "entailment": 0,
+                "contradiction": 2
+            }
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "that-contains-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "filters": {
+            "TargetFilter": {
+                "hypotheses_keys": [
+                    "target_characteristics"
+                ],
+                "threshold": 0.1
+            },
+            "RecSlurFilter": {
+                "hypotheses_keys": [
+                    "rec_slur"
+                ],
+                "thresholds": {
+                    "about_others": 0.5,
+                    "neg_senti": 0.5
+                }
+            },
+            "CSFilter": {
+                "hypotheses_keys": [
+                    "stance",
+                    "this-text-supports-[X]"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "max_catch_min_filter"
+    }
+}

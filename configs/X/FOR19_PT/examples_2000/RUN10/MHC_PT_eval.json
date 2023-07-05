@@ -1,0 +1,21 @@
+{
+    "path_out": "X/FOR19_PT/examples_2000/RUN10/baseline/MHC_PT_eval.json",
+    "dataset": {
+        "name": "MHC_PT",
+        "path": "processed/MHC/MHC_PT_test_3691.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X/FOR19_PT/examples_2000/RUN10"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

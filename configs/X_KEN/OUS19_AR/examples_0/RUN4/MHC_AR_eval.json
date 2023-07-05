@@ -1,0 +1,21 @@
+{
+    "path_out": "X_KEN/OUS19_AR/examples_0/RUN4/baseline/MHC_AR_eval.json",
+    "dataset": {
+        "name": "MHC_AR",
+        "path": "processed/MHC/MHC_AR_test_3570.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X_KEN/RUN4"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

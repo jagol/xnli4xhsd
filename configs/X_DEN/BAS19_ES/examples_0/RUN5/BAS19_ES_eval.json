@@ -1,0 +1,21 @@
+{
+    "path_out": "X_DEN/BAS19_ES/examples_0/RUN5/baseline/BAS19_ES_eval.json",
+    "dataset": {
+        "name": "BAS19_ES",
+        "path": "processed/BAS19_ES/BAS19_ES_test_2000.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X_DEN/RUN5"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

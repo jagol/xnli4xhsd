@@ -1,0 +1,29 @@
+{
+    "path_out": "X_NLI_FEN/HAS21_HI/examples_2000/RUN7/baseline/HAS21_HI_eval.json",
+    "path_hypotheses": "hypotheses/en.json",
+    "dataset": {
+        "name": "HAS21_HI",
+        "path": "processed/HAS21_HI/HAS21_HI_test_500.jsonl"
+    },
+    "predictor": {
+        "model": "morit/XLM-T-full-xnli",
+        "checkpoint": "X_NLI_FEN/HAS21_HI/examples_2000/RUN7",
+        "label_mapping": {
+            "entailment": 0,
+            "contradiction": 2
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "this-text-is-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

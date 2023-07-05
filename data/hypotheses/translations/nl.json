@@ -1,0 +1,63 @@
+{
+    "hate": {
+        "that-contains-hate-speech": "Dat bevat haatdragende taal.",
+        "that-example-contains-hate-speech": "Dat voorbeeld bevat haatdragende taal.",
+        "that-example-is-hateful": "Dat voorbeeld is hatelijk.",
+        "that-example-is-hate-speech": "Dat voorbeeld is haatdragende taal.",
+        "that-text-contains-hate-speech": "Die tekst bevat haatdragende taal.",
+        "that-text-is-hateful": "Die tekst is hatelijk.",
+        "that-text-is-hate-speech": "Die tekst is haatdragende taal.",
+        "this-contains-hate-speech": "Dit bevat haatdragende taal.",
+        "this-example-contains-hate-speech": "Dit voorbeeld bevat haatdragende taal.",
+        "this-example-is-hateful": "Dit voorbeeld is hatelijk.",
+        "this-text-contains-hate-speech": "Deze tekst bevat haatdragende taal.",
+        "this-text-is-hateful": "Deze tekst is hatelijk.",
+        "this-text-is-hate-speech": "Deze tekst is haatdragende taal.",
+        "threat": "Deze tekst is een bedreiging."
+    },
+    "target_group": {
+        "women": "Deze tekst gaat over vrouwen.",
+        "trans": "Deze tekst gaat over transmensen.",
+        "gay": "Deze tekst gaat over homo's.",
+        "black": "Deze tekst gaat over zwarte mensen.",
+        "disabled": "Deze tekst gaat over gehandicapten.",
+        "muslims": "Deze tekst gaat over moslims.",
+        "immigrants": "Deze tekst gaat over immigranten."
+    },
+    "target_group_extended": {
+        "women": "Deze tekst gaat over vrouwen.",
+        "trans": "Deze tekst gaat over transmensen.",
+        "gay": "Deze tekst gaat over homo's.",
+        "black": "Deze tekst gaat over zwarte mensen.",
+        "disabled": "Deze tekst gaat over gehandicapten.",
+        "immigrants": "Deze tekst gaat over immigranten."
+    },
+    "target_characteristics": {
+        "race": "Deze tekst gaat over race.",
+        "ethnicity": "Deze tekst gaat over etniciteit.",
+        "origin": "Deze tekst gaat over nationale afkomst.",
+        "religion": "Deze tekst gaat over religie.",
+        "gender": "Deze tekst gaat over geslacht.",
+        "sexual orientation": "Deze tekst gaat over seksuele geaardheid.",
+        "disability": "Deze tekst gaat over handicap."
+    },
+    "implicit": {
+        "insects": "Deze tekst gaat over insecten.",
+        "apes": "Deze tekst gaat over apen.",
+        "primates": "Deze tekst gaat over primaten.",
+        "rats": "Deze tekst gaat over ratten.",
+        "plague": "Deze tekst gaat over een pest.",
+        "neg-senti": "Deze tekst heeft een negatief sentiment."
+    },
+    "rec_slur": {
+        "myself": "Deze tekst gaat over mezelf.",
+        "us": "Deze tekst gaat over ons.",
+        "neg-senti": "Deze tekst heeft een negatief sentiment."
+    },
+    "stance": {
+        "this-text-supports-[X]": "Deze tekst ondersteunt [x].",
+        "this-text-is-against-[X]": "Deze tekst is tegen [x].",
+        "this-text-is-contains-HS": "Deze tekst bevat haatdragende taal.",
+        "that-contains-HS": "Dat bevat haatdragende taal."
+    }
+}

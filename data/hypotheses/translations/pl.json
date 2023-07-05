@@ -1,0 +1,63 @@
+{
+    "hate": {
+        "that-contains-hate-speech": "To zawiera mowę nienawiści.",
+        "that-example-contains-hate-speech": "Ten przykład zawiera mowę nienawiści.",
+        "that-example-is-hateful": "Ten przykład jest nienawistny.",
+        "that-example-is-hate-speech": "Ten przykład to mowa nienawiści.",
+        "that-text-contains-hate-speech": "Ten tekst zawiera mowę nienawiści.",
+        "that-text-is-hateful": "Ten tekst jest nienawistny.",
+        "that-text-is-hate-speech": "Ten tekst jest mową nienawiści.",
+        "this-contains-hate-speech": "Zawiera to mowę nienawiści.",
+        "this-example-contains-hate-speech": "Ten przykład zawiera mowę nienawiści.",
+        "this-example-is-hateful": "Ten przykład jest nienawistny.",
+        "this-text-contains-hate-speech": "Ten tekst zawiera mowę nienawiści.",
+        "this-text-is-hateful": "Ten tekst jest nienawistny.",
+        "this-text-is-hate-speech": "Ten tekst jest mową nienawiści.",
+        "threat": "Ten tekst jest zagrożeniem."
+    },
+    "target_group": {
+        "women": "Ten tekst dotyczy kobiet.",
+        "trans": "Ten tekst dotyczy osób trans.",
+        "gay": "Ten tekst dotyczy gejów.",
+        "black": "Ten tekst dotyczy czarnych ludzi.",
+        "disabled": "Ten tekst dotyczy osób niepełnosprawnych.",
+        "muslims": "Ten tekst dotyczy muzułmanów.",
+        "immigrants": "Ten tekst dotyczy imigrantów."
+    },
+    "target_group_extended": {
+        "women": "Ten tekst dotyczy kobiet.",
+        "trans": "Ten tekst dotyczy osób trans.",
+        "gay": "Ten tekst dotyczy gejów.",
+        "black": "Ten tekst dotyczy czarnych ludzi.",
+        "disabled": "Ten tekst dotyczy osób niepełnosprawnych.",
+        "immigrants": "Ten tekst dotyczy imigrantów."
+    },
+    "target_characteristics": {
+        "race": "Ten tekst dotyczy rasy.",
+        "ethnicity": "Ten tekst dotyczy pochodzenia etnicznego.",
+        "origin": "Ten tekst dotyczy pochodzenia narodowego.",
+        "religion": "Ten tekst dotyczy religii.",
+        "gender": "Ten tekst dotyczy płci.",
+        "sexual orientation": "Ten tekst dotyczy orientacji seksualnej.",
+        "disability": "Ten tekst dotyczy niepełnosprawności."
+    },
+    "implicit": {
+        "insects": "Ten tekst dotyczy owadów.",
+        "apes": "Ten tekst dotyczy małp.",
+        "primates": "Ten tekst dotyczy naczelnych.",
+        "rats": "Ten tekst dotyczy szczurów.",
+        "plague": "Ten tekst dotyczy zarazy.",
+        "neg-senti": "Ten tekst ma negatywny sentyment."
+    },
+    "rec_slur": {
+        "myself": "Ten tekst jest o mnie.",
+        "us": "Ten tekst jest o nas.",
+        "neg-senti": "Ten tekst ma negatywny sentyment."
+    },
+    "stance": {
+        "this-text-supports-[X]": "Ten tekst obsługuje [x].",
+        "this-text-is-against-[X]": "Ten tekst jest przeciwko [x].",
+        "this-text-is-contains-HS": "Ten tekst zawiera mowę nienawiści.",
+        "that-contains-HS": "To zawiera mowę nienawiści."
+    }
+}

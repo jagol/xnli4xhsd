@@ -1,0 +1,21 @@
+{
+    "path_out": "X/SAN20_IT/examples_20/RUN5/baseline/SAN20_IT_eval.json",
+    "dataset": {
+        "name": "SAN20_IT",
+        "path": "processed/SAN20_IT/SAN20_IT_test_2000.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X/SAN20_IT/examples_20/RUN5"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

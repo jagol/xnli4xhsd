@@ -1,0 +1,63 @@
+{
+    "hate": {
+        "that-contains-hate-speech": "其中包含仇恨言论。",
+        "that-example-contains-hate-speech": "该例子包含仇恨言论。",
+        "that-example-is-hateful": "这个例子是可恨的。",
+        "that-example-is-hate-speech": "该例子是仇恨言论。",
+        "that-text-contains-hate-speech": "该文字包含仇恨言论。",
+        "that-text-is-hateful": "该文字是仇恨的。",
+        "that-text-is-hate-speech": "该文字是仇恨言论。",
+        "this-contains-hate-speech": "这包含仇恨言论。",
+        "this-example-contains-hate-speech": "这个示例包含仇恨言论。",
+        "this-example-is-hateful": "这个例子是可恨的。",
+        "this-text-contains-hate-speech": "本文包含仇恨言论。",
+        "this-text-is-hateful": "这段文字是可恨的。",
+        "this-text-is-hate-speech": "这段文字是仇恨言论。",
+        "threat": "该文字是一个威胁。"
+    },
+    "target_group": {
+        "women": "这段文字是关于女性的。",
+        "trans": "这段文字是关于跨性别者的。",
+        "gay": "这段文字是关于同性恋者的。",
+        "black": "这段文字是关于黑人的。",
+        "disabled": "这段文字是关于残疾人的。",
+        "muslims": "这段文字是关于穆斯林的。",
+        "immigrants": "这段文字是关于移民的。"
+    },
+    "target_group_extended": {
+        "women": "这段文字是关于女性的。",
+        "trans": "这段文字是关于跨性别者的。",
+        "gay": "这段文字是关于同性恋者的。",
+        "black": "这段文字是关于黑人的。",
+        "disabled": "这段文字是关于残疾人的。",
+        "immigrants": "这段文字是关于移民的。"
+    },
+    "target_characteristics": {
+        "race": "这段文字是关于种族的。",
+        "ethnicity": "本文是关于种族的。",
+        "origin": "这段文字是关于国籍的。",
+        "religion": "这段文字是关于宗教的。",
+        "gender": "这段文字是关于性别的。",
+        "sexual orientation": "本文是关于性取向的。",
+        "disability": "该文本是关于残疾的。"
+    },
+    "implicit": {
+        "insects": "这段文字是关于昆虫的。",
+        "apes": "此文本是关于猿猴的。",
+        "primates": "本文是关于灵长类动物的。",
+        "rats": "这段文字是关于老鼠的。",
+        "plague": "这段文字是关于瘟疫的。",
+        "neg-senti": "该文本具有负面情绪。"
+    },
+    "rec_slur": {
+        "myself": "这段文字是关于我自己的。",
+        "us": "这段文字是关于我们的。",
+        "neg-senti": "该文本具有负面情绪。"
+    },
+    "stance": {
+        "this-text-supports-[X]": "该文本支持[x]。",
+        "this-text-is-against-[X]": "该文本反对[x]。",
+        "this-text-is-contains-HS": "本文包含仇恨言论。",
+        "that-contains-HS": "其中包含仇恨言论。"
+    }
+}

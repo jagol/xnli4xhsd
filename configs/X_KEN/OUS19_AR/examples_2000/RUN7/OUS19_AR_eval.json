@@ -1,0 +1,21 @@
+{
+    "path_out": "X_KEN/OUS19_AR/examples_2000/RUN7/baseline/OUS19_AR_eval.json",
+    "dataset": {
+        "name": "OUS19_AR",
+        "path": "processed/OUS19_AR/OUS19_AR_test_1000.jsonl"
+    },
+    "predictor": {
+        "model": "cardiffnlp/twitter-xlm-roberta-base",
+        "checkpoint": "X_KEN/OUS19_AR/examples_2000/RUN7"
+    },
+    "prediction_pipeline": {
+        "no_nli": true,
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcherNoNLI": {
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

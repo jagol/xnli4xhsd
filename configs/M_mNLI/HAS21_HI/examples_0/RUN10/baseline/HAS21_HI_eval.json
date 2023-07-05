@@ -1,0 +1,29 @@
+{
+    "path_out": "M_mNLI/HAS21_HI/examples_0/RUN10/baseline/HAS21_HI_eval.json",
+    "path_hypotheses": "hypotheses/translations/hi.json",
+    "dataset": {
+        "name": "HAS21_HI",
+        "path": "processed/HAS21_HI/HAS21_HI_test_500.jsonl"
+    },
+    "predictor": {
+        "model": "neuralspace-reverie/indic-transformers-hi-bert",
+        "checkpoint": "M_mNLI/hindi_bert_xnli",
+        "label_mapping": {
+            "entailment": 0,
+            "contradiction": 2
+        }
+    },
+    "prediction_pipeline": {
+        "catch_threshold": 0.5,
+        "catchers": {
+            "HSCatcher": {
+                "hypotheses_keys": [
+                    "hate",
+                    "this-text-is-hate-speech"
+                ],
+                "threshold": 0.5
+            }
+        },
+        "comb_strat": "only_HSCatcher"
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "hate": {
+        "that-contains-hate-speech": "Che contiene discorsi di odio.",
+        "that-example-contains-hate-speech": "Quell'esempio contiene discorsi di odio.",
+        "that-example-is-hateful": "Quell'esempio è odioso.",
+        "that-example-is-hate-speech": "Quell'esempio è il discorso dell'odio.",
+        "that-text-contains-hate-speech": "Quel testo contiene discorsi di odio.",
+        "that-text-is-hateful": "Quel testo è odioso.",
+        "that-text-is-hate-speech": "Quel testo è un discorso di odio.",
+        "this-contains-hate-speech": "Questo contiene discorsi di odio.",
+        "this-example-contains-hate-speech": "Questo esempio contiene discorsi di odio.",
+        "this-example-is-hateful": "Questo esempio è odioso.",
+        "this-text-contains-hate-speech": "Questo testo contiene discorsi di odio.",
+        "this-text-is-hateful": "Questo testo è odioso.",
+        "this-text-is-hate-speech": "Questo testo è un discorso di odio.",
+        "threat": "Questo testo è una minaccia."
+    },
+    "target_group": {
+        "women": "Questo testo riguarda le donne.",
+        "trans": "Questo testo riguarda le persone trans.",
+        "gay": "Questo testo riguarda le persone gay.",
+        "black": "Questo testo riguarda i neri.",
+        "disabled": "Questo testo riguarda le persone disabili.",
+        "muslims": "Questo testo riguarda i musulmani.",
+        "immigrants": "Questo testo riguarda gli immigrati."
+    },
+    "target_group_extended": {
+        "women": "Questo testo riguarda le donne.",
+        "trans": "Questo testo riguarda le persone trans.",
+        "gay": "Questo testo riguarda le persone gay.",
+        "black": "Questo testo riguarda i neri.",
+        "disabled": "Questo testo riguarda le persone disabili.",
+        "immigrants": "Questo testo riguarda gli immigrati."
+    },
+    "target_characteristics": {
+        "race": "Questo testo riguarda la razza.",
+        "ethnicity": "Questo testo riguarda l'etnia.",
+        "origin": "Questo testo riguarda l'origine nazionale.",
+        "religion": "Questo testo riguarda la religione.",
+        "gender": "Questo testo riguarda il genere.",
+        "sexual orientation": "Questo testo riguarda l'orientamento sessuale.",
+        "disability": "Questo testo riguarda la disabilità."
+    },
+    "implicit": {
+        "insects": "Questo testo riguarda gli insetti.",
+        "apes": "Questo testo riguarda le scimmie.",
+        "primates": "Questo testo riguarda i primati.",
+        "rats": "Questo testo riguarda i topi.",
+        "plague": "Questo testo parla di una piaga.",
+        "neg-senti": "Questo testo ha un sentimento negativo."
+    },
+    "rec_slur": {
+        "myself": "Questo testo parla di me stesso.",
+        "us": "Questo testo parla di noi.",
+        "neg-senti": "Questo testo ha un sentimento negativo."
+    },
+    "stance": {
+        "this-text-supports-[X]": "Questo testo supporta [x].",
+        "this-text-is-against-[X]": "Questo testo è contro [x].",
+        "this-text-is-contains-HS": "Questo testo contiene discorsi di odio.",
+        "that-contains-HS": "Che contiene discorsi di odio."
+    }
+}
